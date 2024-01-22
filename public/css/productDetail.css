@@ -17,6 +17,7 @@ header {
     font-weight: 400; /* Peso del texto (normal) */
     letter-spacing: 0.2px; /* Espaciado entre caracteres */
     line-height: 20px; /* Altura de línea */
+    z-index: 1100;
 }
 /* ------------------------------------------------------------------------------------------- */
 
@@ -30,7 +31,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px 20px 20px 20px;
-    z-index: 1000;
+    background-color: #fff;
 }
 
 /* Estilos para el lado izquierdo del nav */
@@ -116,7 +117,7 @@ ul li img.icon-brujula {
 
 /* Estilos para los elementos de la lista (Lista de Deseos, Carrito, etc.) */
 ul li {
-    margin: 0px 50px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 ul li a {
