@@ -6,18 +6,17 @@ body {
     letter-spacing: 0.2px;
     margin: 0;
     overflow-x: hidden;
-    background-color: #121212; /* Fondo general de la página */
-    color: #ffffff; /* Color del texto general */
+    background-color: #121212;
+    color: #ffffff;
 }
 
 header {
-    color: #ffffff; /* Color del texto en el encabezado */
-    font-family: 'Inter', sans-serif; /* Tipo de letra del encabezado */
-    font-size: 14px; /* Tamaño del texto */
-    font-weight: 400; /* Peso del texto (normal) */
-    letter-spacing: 0.2px; /* Espaciado entre caracteres */
-    line-height: 20px; /* Altura de línea */
-    z-index: 1100;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 20px;
 }
 /* ------------------------------------------------------------------------------------------- */
 
@@ -31,7 +30,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px 20px 20px 20px;
-    background-color: #fff;
+    background-color: #1d1d1d;
 }
 
 /* Estilos para el lado izquierdo del nav */
@@ -42,9 +41,9 @@ header {
 
 /* Estilos para el logo */
 #logo {
-    margin-right: 20px; /* Ajusta el espacio entre el logo y la barra de búsqueda */
-    width: 75px; /* Ajusta el ancho del logo según sea necesario */
-    height: 65px; /* Ajusta la altura del logo según sea necesario */
+    margin-right: 20px;
+    width: 75px;
+    height: 65px;
     object-fit: contain;
 
 }
@@ -56,22 +55,22 @@ header {
     height: 40px;
     width: 225px;
     margin-right: 20px;
-    border-radius: 20px;
-    overflow: hidden; /* Oculta el desbordamiento */
+    border-radius: 30px;
+    overflow: hidden;
     background-color: #383838;
     
 }
 
 .search {
-    flex: 1; /* Hace que el input de búsqueda ocupe todo el espacio disponible */
-    padding: 8px; /* Ajusta el espacio interno de la barra de búsqueda */
-    border: none; /* Elimina el borde del input */
+    flex: 1;
+    padding: 8px; 
+    border: none;
     background-color: transparent;
-    color: white; /* Color del texto dentro del input */
+    color: white;
 }
 
 .search:focus {
-    outline: none; /* Elimina el borde al enfocar el input */
+    outline: none;
 }
 
 .search-icon {
@@ -90,51 +89,223 @@ ul {
     align-items: center;
 }
 
-ul li {
-    margin-right: 20px; /* Ajusta el espacio entre elementos de la lista */
+.i1 li {
+    margin-right: 20px;
 }
 
 ul li a {
     display: flex;
     align-items: center;
-    color: #fff; /* Cambia el color del texto según tus preferencias */
+    color: #fff;
     text-decoration: none;
 }
 
-ul li img.icon-biblioteca,
-ul li img.icon-brujula {
-    margin-right: 8px;
+.icon-biblioteca,
+.icon-brujula {
     width: 30px;
     object-fit: contain;
-    margin-left: 8px;
+    margin-right: 8px;
 }
 
 /* Estilos para el lado derecho del nav */
 .nav-der {
     display: flex;
-    align-items: center;
+    align-items: stretch;
+    margin-right: 33px;
 }
 
 /* Estilos para los elementos de la lista (Lista de Deseos, Carrito, etc.) */
-ul li {
-    margin: 0px 0px 0px 0px;
+.i2 li {
+    margin-right: 20px;
 }
 
-ul li a {
+.i2 li a {
     display: flex;
     align-items: center;
-    color: #fff; /* Cambia el color del texto según tus preferencias */
     text-decoration: none;
 }
 
 .icon-user {
-    width: 50px;
+    width: 40px;
     object-fit: contain;
-    margin-left: 8px;
 }
 
 .icon-idiomas {
     width: 30px;
     object-fit: contain;
-    margin-left: 8px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+/* Estilos para el contenido principal */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.calificación {
+    font-size: 1.2em;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la sección de detalles del juego */
+.game-details {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Estilos para el carrusel principal */
+.main-image {
+    flex: 1;
+    max-width: 60%;
+    margin-right: 20px;
+}
+
+/* Estilos para las miniaturas de imágenes */
+.image-thumbnails {
+    flex: 1;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-thumbnails img {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* Estilos para la descripción del juego y detalles */
+.description {
+    flex: 1;
+    max-width: 30%;
+    margin-top: 20px;
+}
+
+.description span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+/* Estilos para la información del juego */
+.game-info {
+    flex: 1;
+    max-width: 30%;
+    margin-top: 20px;
+}
+
+.cover-and-rating {
+    margin-bottom: 20px;
+}
+
+.cover-and-rating img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.price-and-offer span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.buy-buttons button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.refund-info,
+.developer-info,
+.release-dates,
+.platform-info,
+.share-buttons,
+.social-and-requirements,
+.login-requirements,
+.language-options,
+.system-requirements,
+.copy-game {
+    margin-top: 20px;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.site-social,
+.customer-service,
+.copyright {
+    margin-bottom: 20px;
+}
+
+.site-social h3,
+.customer-service h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.customer-service ul {
+    list-style: none;
+    padding: 0;
+}
+
+.customer-service li {
+    margin-bottom: 10px;
+}
+
+.customer-service a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para los iconos sociales en el pie de página */
+.social-icon {
+    display: inline-block;
+    margin-right: 20px;
+    width: 50px;
+    object-fit: contain;
+}
+
+/* Estilos para los enlaces de servicio al cliente */
+.customer-service a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para el enlace de copyright */
+.copyright a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Estilos para los enlaces en el pie de página */
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 600px) {
+/*móviles */
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+/*tabletas */
+}
+
+
+@media only screen and (min-width: 1025px) {
+/*notebooks y pantallas más grandes */
 }
